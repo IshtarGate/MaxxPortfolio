@@ -3,5 +3,17 @@ div{
 }
 
 body{
-    /*background: #bdbdbd;*/
+    background: #fafafa;
+
+}
+
+.customFooter {
+    background-color: #1b6d85;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.footerText{
+    text-align: center;
+
 }
