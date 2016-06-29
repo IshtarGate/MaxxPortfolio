@@ -4,16 +4,55 @@ div{
 
 body{
     background: #fafafa;
-
+    padding-bottom: 70px;
 }
 
-.customFooter {
-    background-color: #1b6d85;
-    margin-top: 15px;
-    margin-bottom: 0;
+.colAddBottomMargin{
+    margin-bottom: 20px;
+}
+.centeredMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin: 5px;*/
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding-bottom: 20px;
 }
 
-.footerText{
+.contentTitleBox{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+.contentDescriptionBox{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contentImageBox {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textNoMargin {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
 }
