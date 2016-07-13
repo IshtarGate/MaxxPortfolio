@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>James' Maxx Portfolio</title>
+    <title>MedStar Espanol Site</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,15 +31,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">IshtarGate</a>
+            <a class="navbar-brand" href="../index.html">IshtarGate</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Portfolio</a></li>
-                <li><a href="About_Me.html">About Me</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li class="active"><a href="../index.html">Portfolio</a></li>
+                <li><a href="../About_Me.html">About Me</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
                 <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -59,73 +59,26 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
-            <h3>Hi, I'm James</h3>
-            <h6>Here you can find a little bit of information about me and some of my recent work here at <a href="http://maxxpotential.com">Maxx Potential</a>
-            </h6>
-        </div>
-        <div class="col-sm-8"></div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>Recent Work</h1>
+        <div class="col-lg-offset-2 col-lg-8 col-sm-12">
+            <h1>Medstar Espanol Subsite</h1>
+            <p><strong>Objective:</strong> Clone the family choice subdomain of MedStar Health to /espanol</p>
+            <p><strong>Site:</strong> medstarhealth.org/espanol</p>
+            <p><strong>Pages:</strong> 299</p>
+            <ul>
+                <li>Started with blank site, recreated some main pages manually by adding widgets to content area and copying content from analogous family choice page</li>
+                <li>Had to fight the wordpress default import/export mechanism.</li>
+                <li>Was only able to export pages.</li>
+                <li>All pages were considered “lost” and had to add them at the root branch and nest pages manually</li>
+                <li>Had to activate block, essential grid, all in one buttons, mfc parent page handling, tinyMCE first in staging and then in production check for unforscene plugin interactions</li>
+                <li>Had to export/import rev sliders, forms, essential grid</li>
+                <li>Had to recreate from scratch, all menus</li>
+                <li>Had to correct menu assignment for the custom menu for each page (ie. dc for members page would have a maryland for members menu assigned) got assistance from coworker (Han)</li>
+                <li>XML import/export was broken. Had to import media by hand. Used regular expressions and excel sorting to pull all links for png and jpg images, wrote javascript containing html file to open all links at once, then downloaded manually, then used batch import to upload all images, then fixed the skin assignment in the ess grids</li>
+                <li>Worked with Austin to create a casperJS capture script that printed all the screenshots of all pages to a directory, had to pull links from export pages xml, loaded it into a trimmed down version of screenshot.js and used to scan all pages for visual errors</li>
+            </ul>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-4 colAddBottomMargin">
-            <div class="centeredMedia">
-                <div class="contentTitleBox">
-                    <h3>Medstar Bugfixes</h3>
-                </div>
-                <div class="contentDescriptionBox">
-                    <p class="textNoMargin">Implement bugfixes, test on staging, pull request to production</p>
-                </div>
-                <div class="contentImageBox">
-                    <a href="/pages/Medstar_Bugfixes.html"><img src="resources/ms%20bugfix%20screenshot.png" style="height: 200px;"></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 colAddBottomMargin">
-            <div class="centeredMedia">
-                <div class="contentTitleBox">
-                    <h3>Espanol</h3>
-                </div>
-                <div class="contentDescriptionBox">
-                    <p class="textNoMargin">Cloned medstarfamilychoice to espanol by hand, activated and debugged plugins, recreated menus.</p>
-                </div>
-                <div class="contentImageBox">
-                    <a href="/pages/Espanol%20Subsite.html"><img src="resources/espanol%20screenshot.png" style="height: 200px;"></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 colAddBottomMargin">
-            <div class="centeredMedia">
-                <div class="contentTitleBox">
-                    <h3>Git and Version Control</h3>
-                </div>
-                <div class="contentDescriptionBox">
-                    <p class="textNoMargin">Developed proficiency with Git and Git Flow</p>
-                </div>
-                <div class="contentImageBox">
-                    <a href="/pages/Git%20and%20Version%20Control.html"><img src="resources/git-flow.png" style="width: 100%;;"></a>
-                </div>
-            </div>
-        </div>
-        <!--<div class="col-sm-4 colAddBottomMargin">
-            <div class="centeredMedia">
-                <div class="contentTitleBox">
-                    <h3>Automated Testing</h3>
-                </div>
-                <div class="contentDescriptionBox">
-                    <p class="textNoMargin">Modified Austin's CasperJS code to screenshot all pages in the Espanol domain</p>
-                </div>
-                <div class="contentImageBox">
-                    <a href="About_Me.html"><img src="resources/Screen%20Shot%20automated%20testing.png" style="height: 200px;"></a>
-                </div>
-            </div>
-        </div>-->
-    </div>
 </div>
 <!--carousel-->
 <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -172,7 +125,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
 
 </body>
